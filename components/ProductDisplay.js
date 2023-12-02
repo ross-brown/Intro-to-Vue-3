@@ -69,7 +69,7 @@ app.component('product-display', {
           this.selectedVariant = index
       },
       removeItem() {
-        this.$emit('remove-item');
+        this.$emit('remove-item', this.variants[this.selectedVariant].id);
       }
   },
   computed: {
